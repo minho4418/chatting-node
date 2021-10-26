@@ -10,7 +10,3 @@
 /* 클라이언트는 http://서버주소/test 로 액세스 */
 app.use('/test', express.static('./image/'))
 ```
-
-
-# 강좌
-- [전체강좌 보기](https://github.com/leegeunhyeok/node-chat/blob/master/README.md)
