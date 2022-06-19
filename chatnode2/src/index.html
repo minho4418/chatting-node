@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat app</title>
+    <link rel="icon" href="../public/favicon-bold-color201202.svg" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/442fa0184e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./default.css" />
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="./main.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat">
+        <div id="user-list">
+          <ul class="list-group">
+            <li class="list-group-item head">User List</li>
+          </ul>
+        </div>
+        <div id="message-container"></div>
+
+        <form id="send-container">
+          <input
+            type="text"
+            id="message-input"
+            class="form-control"
+            maxlength="400"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="send-button" class="btn btn-warning">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
